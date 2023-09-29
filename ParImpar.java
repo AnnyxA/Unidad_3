@@ -1,14 +1,21 @@
-
 import java.util.Scanner;
-public class Cuadrado{
-    public static void main (String[]args){
-        int a,lim,c;
-        Scanner tecla=new Scanner(System.in);
-        System.out.println("DAME EL LIMITE:/n");
-        lim=tecla.nextInt();
-        for(a=1;a<=lim;a++){
-            c=a*a;
-            System.out.println(a+"="+c+"/n");
+
+public class ParImpar {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.print("Ingresa un número entero: ");
+        int numero = scanner.nextInt();
+
+        
+        if (numero % 2 == 0) {
+            System.out.println(numero + " es un número par.");
+        } else {
+            System.out.println(numero + " es un número impar.");
         }
+
+        
     }
-}
+ }
